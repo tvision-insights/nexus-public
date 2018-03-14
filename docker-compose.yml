@@ -1,0 +1,8 @@
+version: '2.2'
+services:
+  nexus:
+    build:
+      context: ./
+    image: nexus:3.9.0-01
+    volumes:
+      - "${NEXUS_TARGET}:/target"
