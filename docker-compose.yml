@@ -5,4 +5,5 @@ services:
       context: ./
     image: nexus:3.9.0-01
     volumes:
+      - "./.m2:/root/.m2"
       - "${NEXUS_TARGET}:/target"
